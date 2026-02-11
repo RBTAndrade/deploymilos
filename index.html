@@ -3,127 +3,84 @@
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
     <style type="text/css">
-        /* --- CONFIGURAÇÃO DE CENTRALIZAÇÃO --- */
+        /* Centralização e Estética da Página */
         body {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centraliza horizontalmente */
-            background-color: #f0f0f0; /* Cor de fundo suave para destacar a 'folha' */
+            align-items: center;
+            background-color: #f4f4f9;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
+            font-family: "Arial", sans-serif;
         }
 
-        .c3 {
+        .container {
             background-color: #ffffff;
-            max-width: 800px; /* Largura confortável para leitura */
+            max-width: 850px;
             width: 100%;
-            padding: 40px; /* Reduzi o padding fixo para melhor visualização */
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Efeito visual de folha */
+            padding: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
             box-sizing: border-box;
         }
 
-        /* Centralizando imagens dentro dos parágrafos */
-        p.c2, p.c1 {
-            text-align: center; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        /* Garantindo que cada parágrafo e sua imagem fiquem centralizados */
+        p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #333;
+            text-align: center; /* Centraliza o texto e a imagem interna */
+        }
+
+        span.bold {
+            font-weight: 700;
         }
 
         img {
-            max-width: 100%; /* Garante que a imagem não ultrapasse a tela */
+            display: block;
+            margin: 15px auto; /* Garante que a imagem pule linha e centralize */
+            max-width: 100%;
             height: auto !important;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
-
-        /* --- ESTILOS ORIGINAIS --- */
-        ol { margin: 0; padding: 0; }
-        table td, table th { padding: 0; }
-        
-        .c1 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-            height: 11pt;
-        }
-        
-        .c0 {
-            color: #000000;
-            font-weight: 400;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 11pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c2 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .c4 { font-weight: 700; }
-        p { margin: 0; color: #000000; font-size: 11pt; font-family: "Arial"; }
     </style>
 </head>
-<body class="doc-content">
-    <div class="c3"> <p class="c2">
-            <span>A) Desenvolvedor transfere a release para o ambiente de </span>
-            <span class="c4">homologa&ccedil;&atilde;o</span>
-            <span class="c0">&nbsp;e inclui um novo registro de deploy, informando o nome (1) e anexando o arquivo com as mudan&ccedil;as (2):</span>
+<body>
+    <div class="container">
+        <p>
+            A) Desenvolvedor transfere a release para o ambiente de <span class="bold">homologa&ccedil;&atilde;o</span> e inclui um novo registro de deploy, informando o nome (1) e anexando o arquivo com as mudan&ccedil;as (2):
+            <img alt="Registro de deploy" src="images/image2.png" style="width: 419px;">
         </p>
-        <p class="c1"><span class="c0"></span></p>
-        <p class="c2">
-            <img alt="" src="images/image2.png" style="width: 419.18px; height: 336.31px;" title="" />
+
+        <p>
+            B) Imediatamente, a equipe de valida&ccedil;&atilde;o recebe a notifica&ccedil;&atilde;o abaixo informando que um novo processo de homologação está disponível para análise:
+            <img alt="Notificação de validação" src="images/image6.png" style="width: 458px;">
         </p>
-        <p class="c1"><span class="c0"></span></p>
-        <p class="c2">
-            <span class="c0">B) Imediatamente, a equipe de valida&ccedil;&atilde;o recebe a notifica&ccedil;&atilde;o abaixo:</span>
+
+        <p>
+            C) Qualquer integrante da equipe de valida&ccedil;&atilde;o acessa o sistema para registrar o in&iacute;cio dos testes, clicando no bot&atilde;o &quot;Iniciar teste&quot; para travar a release para edição:
+            <img alt="Iniciar teste" src="images/image3.png" style="width: 334px;">
         </p>
-        <p class="c1"><span class="c0"></span></p>
-        <p class="c2">
-            <img alt="" src="images/image6.png" style="width: 458.5px; height: 163.75px;" title="" />
+
+        <p>
+            D) Uma vez iniciados os testes, o sistema abre a op&ccedil;&atilde;o de incluir coment&aacute;rios apresentando o bot&atilde;o &quot;Comentar&quot;, permitindo o registro de observações técnicas:
+            <img alt="Botão comentar" src="images/image5.png" style="width: 318px;">
         </p>
-        <p class="c1"><span class="c0"></span></p>
-        <p class="c2">
-            <span class="c0">C) Qualquer integrante da equipe de valida&ccedil;&atilde;o acessa o sistema para registrar o in&iacute;cio dos testes, clicando no bot&atilde;o &quot;Iniciar teste&quot;:</span>
+
+        <p>
+            E) Qualquer integrante da equipe de valida&ccedil;&atilde;o pode acessar o sistema e registrar seus coment&aacute;rios, de forma a constituir um hist&oacute;rico de coment&aacute;rios (1) que n&atilde;o pode ser editado. Al&eacute;m disso, aparecem os bot&otilde;es de Aprovar (2) ou Rejeitar (3) a release:
+            <img alt="Histórico e aprovação" src="images/image7.png" style="width: 477px;">
         </p>
-        <p class="c1"><span class="c0"></span></p>
-        <p class="c2">
-            <img alt="" src="images/image3.png" style="width: 334.5px; height: 143.25px;" title="" />
+
+        <p>
+            F) Ao APROVAR a release, todos recebem a notifica&ccedil;&atilde;o abaixo e nossa &aacute;rea de DevOps providenciar&aacute; a transfer&ecirc;ncia de <span class="bold">Homologa&ccedil;&atilde;o</span> para <span class="bold">Produ&ccedil;&atilde;o</span>:
+            <img alt="Aprovação final" src="images/image4.png" style="width: 517px;">
         </p>
-        <p class="c2">
-            <span class="c0">D) Uma vez iniciados os testes, o sistema abre a op&ccedil;&atilde;o de incluir coment&aacute;rios apresentando o bot&atilde;o &quot;Comentar&quot;</span>
-        </p>
-        <p class="c1"><span class="c0"></span></p>
-        <p class="c2">
-            <img alt="" src="images/image5.png" style="width: 318.5px; height: 186.24px;" title="" />
-        </p>
-        <p class="c2">
-            <span class="c0">E) Qualquer integrante da equipe de valida&ccedil;&atilde;o pode acessar o sistema e registrar seus coment&aacute;rios, formando um hist&oacute;rico. Al&eacute;m disso, aparecem os bot&otilde;es de Aprovar (2) ou Rejeitar (3):</span>
-        </p>
-        <p class="c1"><span class="c0"></span></p>
-        <p class="c2">
-            <img alt="" src="images/image7.png" style="width: 477px; height: 344px;" title="" />
-        </p>
-        <p class="c1"><span class="c0"></span></p>
-        <p class="c2">
-            <span>F) Ao APROVAR a release, todos recebem a notifica&ccedil;&atilde;o abaixo:</span>
-        </p>
-        <p class="c2">
-            <img alt="" src="images/image4.png" style="width: 517.5px; height: 297.9px;" title="" />
-        </p>
-        <p class="c1"><span class="c0"></span></p>
-        <p class="c2">
-            <span>G) Ao REJEITAR a release, todos recebem a notifica&ccedil;&atilde;o abaixo:</span>
-        </p>
-        <p class="c2">
-            <img alt="" src="images/image1.png" style="width: 520.51px; height: 300.82px;" title="" />
+
+        <p>
+            G) Ao REJEITAR a release, todos recebem a notifica&ccedil;&atilde;o abaixo e caber&aacute; ao desenvolvedor os ajustes necess&aacute;rios e lan&ccedil;amento de uma nova release:
+            <img alt="Rejeição de release" src="images/image1.png" style="width: 520px;">
         </p>
     </div>
 </body>
